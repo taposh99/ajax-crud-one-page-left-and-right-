@@ -46,4 +46,20 @@ class TeacherController extends Controller
         $data = Teacher::findOrFail($id);
         return response()->json($data);
     }
+    
+    public function updateData(Request $request, $id)
+    {
+
+        $data = Teacher::findOrFail($id)->update([
+            'name' => $request->name,
+            'title' => $request->title,
+            'institute' => $request->institute,
+        ]);
+      
+
+
+        // You can return a response to the AJAX request
+        return response()->json($data);
+    }
 }
+

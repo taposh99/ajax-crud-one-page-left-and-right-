@@ -104,9 +104,9 @@
                             <!-- <input type="hidden" id="id">
                         <button type="submit" id="add" onclick="addData()" class="btn btn-primary">Add</button>
                         <button type="submit" id="update" onclick="updateData()" class="btn btn-primary">Update</button> -->
-
+                            <input type="hidden" id="id">
                             <button type="submit" id="btnSubmit" class="btn btn-primary">Add</button>
-                            <button type="submit" id="updateBtn" class="btn btn-primary">Update</button>
+                            <button type="submit" id="updateBtn" class="btn btn-primary" onclick='updateData()'>Update</button>
                         </form>
 
 
@@ -115,7 +115,7 @@
             </div>
         </div>
     </div>
-  
+
     <script>
         $.ajaxSetup({
             headers: {
@@ -123,7 +123,7 @@
             }
         })
     </script>
-      <script>
+    <script>
         $('#addT').show();
         $('#btnSubmit').show();
         $('#updateT').hide();
@@ -180,9 +180,38 @@
                     $('#updateT').show();
                     $('#updateBtn').show();
 
+                    $('#id').val(data.id);
+
                     $('#name').val(data.name);
                     $('#title').val(data.title);
                     $('#institute').val(data.institute);
+                    console.log(data);
+                }
+            });
+        }
+    </script>
+
+    <script>
+        function updateData(id) {
+            var id = $('#id').val();
+            var name = $('#name').val();
+            var title = $('#title').val();
+            var institute = $('#institute').val();
+            $.ajax({
+                type: 'POST',
+                dataType: 'json',
+                data: {
+                    name: name,
+                    title: title,
+                    institute: institute
+                },
+                url: "/teacher/update/" + id, // Replace with your actual URL structure
+
+                success: function(data) {
+                    $('#addT').show();
+                    $('#btnSubmit').show();
+                    $('#updateT').hide();
+                    $('#updateBtn').hide();
                     console.log(data);
                 }
             });
