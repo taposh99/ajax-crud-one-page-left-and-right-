@@ -17,4 +17,6 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/',[TeacherController:: class,'index'])->name('ajax');
+Route::get('/get-all-data',[TeacherController:: class,'getData'])->name('get-all-data');
 Route::POST('/store',[TeacherController::class,'store'])->name('store');
+Route::get('//teacher/edit/{id}',[TeacherController:: class,'editData'])->name('edit');
