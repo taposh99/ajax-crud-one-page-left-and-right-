@@ -17,15 +17,7 @@ class TeacherController extends Controller
         ]);
     }
 
-    // public function getData() {
-    //     // Retrieve the data you want to send to the client and paginate it
-    //     $data = Teacher::latest()->paginate(5); // Paginate with 10 items per page
-    //     // You can adjust the number of items per page as needed
-
-    //     // Return the paginated data as JSON
-    //     return response()->json($data);
-    // }
-
+ 
 
     public function store(Request $request)
     {
@@ -46,6 +38,8 @@ class TeacherController extends Controller
         $data = Teacher::findOrFail($id);
         return response()->json($data);
     }
+
+    //update ajax code
     
     public function updateData(Request $request, $id)
     {

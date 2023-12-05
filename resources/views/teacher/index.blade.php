@@ -33,9 +33,9 @@
                             <thead>
                                 <tr>
                                     <th scope="col">SL</th>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Title</th>
-                                    <th scope="col">Institute</th>
+                                    <th scope="col">Name list</th>
+                                    <th scope="col">Title list</th>
+                                    <th scope="col">Institute list</th>
                                     <th scope="col">Action</th>
                                 </tr>
                             </thead>
@@ -43,7 +43,7 @@
                                 @php $i=1 @endphp
                                 @foreach ($data as $value)
                                 <tr>
-                                    <td>{{ $i++ }}</td> <!-- Increment $i for each row -->
+                                    <td>{{ $i++ }}</td> 
                                     <td>{{ $value->name }}</td>
                                     <td>{{ $value->title }}</td>
                                     <td>{{ $value->institute }}</td>
@@ -91,19 +91,17 @@
 
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Title</label>
+                                <label for="exampleInputPassword1">Title list</label>
                                 <input type="text" id="title" name="title" class="form-control " placeholder="Job Positon" required>
 
                             </div>
 
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Institute</label>
+                                <label for="exampleInputPassword1">Institute list</label>
                                 <input type="text" id="institute" class="form-control" name="institute" placeholder="Institute Name" required>
 
                             </div>
-                            <!-- <input type="hidden" id="id">
-                        <button type="submit" id="add" onclick="addData()" class="btn btn-primary">Add</button>
-                        <button type="submit" id="update" onclick="updateData()" class="btn btn-primary">Update</button> -->
+                            
                             <input type="hidden" id="id">
                             <button type="submit" id="btnSubmit" class="btn btn-primary">Add</button>
                             <button type="submit" id="updateBtn" class="btn btn-primary" onclick='updateData()'>Update</button>
