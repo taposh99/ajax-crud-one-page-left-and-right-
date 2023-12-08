@@ -86,13 +86,13 @@
                         <form id="my-form">
 
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Name</label>
+                                <label for="exampleInputEmail1">Name list</label>
                                 <input type="text" id="name" name="name" class="form-control" aria-describedby="emailHelp" placeholder="Enter name" required>
 
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Title list</label>
-                                <input type="text" id="title" name="title" class="form-control " placeholder="Job Positon" required>
+                                <input type="text" id="title" name="title" class="form-control " placeholder="Please give tittle" required>
 
                             </div>
 
