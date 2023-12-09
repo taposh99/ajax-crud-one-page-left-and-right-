@@ -86,24 +86,24 @@
                         <form id="my-form">
 
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Name list</label>
+                                <label for="exampleInputEmail1">Name</label>
                                 <input type="text" id="name" name="name" class="form-control" aria-describedby="emailHelp" placeholder="Enter name" required>
 
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Title list</label>
-                                <input type="text" id="title" name="title" class="form-control " placeholder="Please give tittle" required>
+                                <label for="exampleInputPassword1">Title</label>
+                                <input type="text" id="title" name="title" class="form-control " placeholder="Please input tittle" required>
 
                             </div>
 
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Institute list</label>
-                                <input type="text" id="institute" class="form-control" name="institute" placeholder="Institute Name" required>
+                                <label for="exampleInputPassword1">Institute</label>
+                                <input type="text" id="institute" class="form-control" name="institute" placeholder="Please input Institute Name" required>
 
                             </div>
                             
                             <input type="hidden" id="id">
-                            <button type="submit" id="btnSubmit" class="btn btn-primary">Add</button>
+                            <button type="submit" id="btnSubmit" class="btn btn-primary">Save</button>
                             <button type="submit" id="updateBtn" class="btn btn-primary" onclick='updateData()'>Update</button>
                         </form>
 

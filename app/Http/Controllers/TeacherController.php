@@ -32,6 +32,8 @@ class TeacherController extends Controller
         // You can return a response to the AJAX request
         return response()->json(['message' => 'Product saved successfully']);
     }
+    //edit controller code
+    
     public function editData($id)
     {
        
