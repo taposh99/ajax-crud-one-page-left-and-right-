@@ -25,7 +25,7 @@
             <div class="col-sm-8">
                 <div class="card">
                     <div class="card-header">
-                        All Teacher
+                        All Teacher 
                     </div>
 
                     <div class="card-body">
@@ -33,9 +33,9 @@
                             <thead>
                                 <tr>
                                     <th scope="col">SL</th>
-                                    <th scope="col">Name list</th>
-                                    <th scope="col">Title list</th>
-                                    <th scope="col">Institute list</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Institute</th>
                                     <th scope="col">Action</th>
                                 </tr>
                             </thead>

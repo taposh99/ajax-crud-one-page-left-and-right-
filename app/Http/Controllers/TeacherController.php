@@ -17,7 +17,7 @@ class TeacherController extends Controller
         ]);
     }
 
- 
+ //store code
 
     public function store(Request $request)
     {
